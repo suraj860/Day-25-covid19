@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+}
+
+
+/* banner css */
+
+.banner{
+    display: flex;
+    padding: 50px 30px;
+    justify-content: center;
+    background-color:black;
+    width: 100%;    
+}
+
+.message{
+    text-align: left;
+    padding: 25px 30px 35px 40px;  
+}
+
+.titles,.titles2{
+    font-size: 2.7rem;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+.titles2{
+    color:rgb(190, 189, 189) ;
+}
+.videos{
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(190, 189, 189);
+    font-weight: bold;
+}
+.fab{
+    margin-right: 10px;
+}
+
+.houseIcon{
+    margin-left: 20px;
+    color: green;
+}
+img{
+    width: auto;
+    height: 250px;
+}
+
+.image{
+    padding-right: 25px;
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+/* search button */
+
+.searchdiv{
+    text-align: center;
+    padding: 20px ;
+}
+::placeholder{
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.3;
+}
+.searchtext{
+    width: 400px;
+    border: none;
+    border: 1px solid black;
+    height: 2.2rem;
+    margin-right: 30px;
+    padding-left: 10px;
+}
+
+.rat{
+    background-color: white;
+    display: flex;
+    border-radius: 2rem;
+}
+/* country statistics */
+.srymsg{
+    color: red;
+}
+
+
+.statistics{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 60px;
+    padding: 25px 40px;
+}
+
+.numbers1, .numbers2 , .numbers3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+    padding: 20px 25px 0 25px;
+    border-radius: 2rem;
+   
+    color: white;
+    background-color: black;
+}
+
+.digit{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+}
+.statsvalue{
+    margin-bottom: 15px;
+}
+
+/* ICONS */
+
+.icon-1{
+    color: rgb(206, 54, 54);
+}
+
+.icon-2{
+    color: red;
+}
+
+.icon-3{
+    color: lightgreen;
+}
+
+/* footer */
+
+.last{
+    background-color: black;
+    text-align: center;
+    color: yellow;
+    height: 25px;
+    font-weight: bold;
+}
+
+
+@media(max-width:1074px){
+    .statsvalue{
+        font-size: 1.8rem;
+    }
+    .digit{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:882px){
+    .statistics{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rat{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:673px){
+    .statistics{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:550px){
+    .titles,.titles2{
+        font-size: 2rem;
+    }
+    .img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .searchtext{
+        width: 214px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .image{
+        display: none;
+    }
+
+    .banner{
+        padding: 20px 10px;
+    }
+}
+
+
+@media(max-width:502px){
+    .message{
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:220px){
+    .searchtext{
+        width: auto;
+    }
+}
+
+@media(max-width:335px){
+    .titles2,.titles{
+        font-size: 1.6rem;
+    }
+    .message{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+    .searchtext{
+        width: 175px;    
+    }
+
+    .searchdiv{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .statistics{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+    }
+    
+
+    .numbers1,.numbers2,.numbers3{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .statsvalue{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media(max-width:200px){
+    body{
+        min-width: fit-content;
+    }
+}
